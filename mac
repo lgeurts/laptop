@@ -107,14 +107,17 @@ brew update
 fancy_echo "Installing Postgres, a good open source relational database ..."
   brew_install_or_upgrade 'postgres' '--no-python'
 
+fancy_echo "Installing MySQL, a subpar open source relational database that a few clients are unfortunately on ..."
+  brew_install_or_upgrade 'mysql'
+
 fancy_echo "Installing Redis, a good key-value database ..."
   brew_install_or_upgrade 'redis'
 
+fancy_echo "Installing Sphinx, for search funtime"
+  brew_install_or_upgrade 'sphinx'
+
 fancy_echo "Installing The Silver Searcher (better than ack or grep) to search the contents of files ..."
   brew_install_or_upgrade 'the_silver_searcher'
-
-fancy_echo "Installing vim from Homebrew to get the latest version ..."
-  brew_install_or_upgrade 'vim'
 
 fancy_echo "Installing ctags, to index files for vim tab completion of methods, classes, variables ..."
   brew_install_or_upgrade 'ctags'
@@ -153,6 +156,9 @@ fancy_echo "Installing NVM, Node.js, and NPM, for running apps and installing Ja
 
 fancy_echo "Starting Postgres ..."
   brew_launchctl_restart postgresql
+
+fancy_echo "Starting MySQL ..."
+  brew_launchctl_restart mysql
 ### end mac-components/start-services
 
 fancy_echo "Installing rbenv, to change Ruby versions ..."
