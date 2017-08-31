@@ -21,8 +21,12 @@ We support:
 
 * [14.04: Trusty Tahr](https://wiki.ubuntu.com/TrustyTahr/ReleaseNotes),
 * [12.04 LTS: Precise Pangolin](https://wiki.ubuntu.com/PrecisePangolin/ReleaseNotes),
-* Debian stable (currently [wheezy](http://www.debian.org/releases/stable/)).
-* Debian testing (currently [jessie](http://www.debian.org/releases/testing/)).
+* Debian obsolete stable [wheezy](http://www.debian.org/releases/),
+* Debian obsolete stable [jessie](http://www.debian.org/releases/).
+
+We are testing:
+
+* Debian current stable [stretch](http://www.debian.org/releases/stable/).
 
 Install
 -------
